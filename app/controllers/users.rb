@@ -31,8 +31,8 @@ protected
   def send_welcome_letter_to(user)
     send_mail NotificationMailer, :welcome_letter,
       { :to => user.email,
-        :from => "noreply@bien.kg",
-        :subject => "Регистрация на bienkg" },
+        :from => "info@al.en.cx",
+        :subject => "Регистрация на ENG!NE" },
       { :email => user.email,
         :password => user.password
       }

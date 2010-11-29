@@ -20,7 +20,8 @@ protected
     end
   end
 
-  def ensure_game_was_not_started
-    raise Unauthorized, "Нельзя редактировать игру после её начала" if @game.started?
-  end
+  #def ensure_game_was_not_started
+  #  #TODO Сделать возможность редактировать игру послее ее начала.
+  #  raise Unauthorized, "Нельзя редактировать игру после её начала" if @game.started?
+  #end
 end

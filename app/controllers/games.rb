@@ -6,7 +6,7 @@ class Games < Application
   before :ensure_author_if_game_is_draft, :only => [:show]
   before :ensure_author_if_no_start_time,:only =>[:show]
   before :ensure_author, :only => [:edit, :update]
-  before :ensure_game_was_not_started, :only => [:edit, :update]
+  #before :ensure_game_was_not_started, :only => [:edit, :update]
 
   def index
     unless params[:user_id].blank?

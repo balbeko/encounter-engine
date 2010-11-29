@@ -3,4 +3,6 @@
 <% else %>
   <%= link_to "Главная", url(:index_page), :class => "home-link" %>
 <% end %>
-<%= Time.now.strftime("%Y-%m-%d %H:%M")%>
+<span style="color:white;">
+  <%= Time.now.strftime("%Y-%m-%d %H:%M")%>
+</span>
